@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Input"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewInput"
+        android:text="Input Data User"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNama"
+        android:text="Nama : "
+        android:layout_below="@+id/textViewInput"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="128dp"
+        android:layout_alignParentStart="true"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/txtAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtNama"
+        android:layout_marginTop="208dp"
+        android:text="Alamat :"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/txtIsiNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtNama"
+        android:layout_alignStart="@+id/btnSubmit"
+        android:ems="10"
+        android:hint="Isi Nama"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/txtIsiAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtAlamat"
+        android:layout_alignStart="@+id/btnSubmit"
+        android:ems="10"
+        android:hint="Isi Alamat"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Submit" />
+
+
+</RelativeLayout>
