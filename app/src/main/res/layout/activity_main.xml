@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imgBaru"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
